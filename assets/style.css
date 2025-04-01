@@ -3,7 +3,14 @@ header {
     padding: 0;
 }
 
+/* imagen home */
+.contenido_centrado {
+    text-align: center;
+    height: 500px;
+    margin-top: 100px;
+}
 
+/* titulo y textos secundarios */
 h1 {
     color: #000000;
     text-align: center;
@@ -20,11 +27,8 @@ h4 {
     font-weight: bold;
   }
 
-nav {
-    color: #000000
-}
 
-
+/* seccion about me */  
 .itemmon2 {
     display: flex;
     align-content: end;
@@ -36,11 +40,12 @@ body {
 
 }
 
-<!--contacto-->
+/* contacto */
 .formfile {
     margin-top: 30px;
 }
 
+/* about me */
 .containermon {
     display: flex;
   }
@@ -51,3 +56,4 @@ body {
     padding-top: 100px;
     padding-left: 50px;
   }
+
