@@ -1,0 +1,15 @@
+
+$color-primario: pink;
+$color-secondary: purple;
+
+.botonmon {
+  background-color: $color-primario;
+}
+
+/* gradiente en el titulo de contacto */
+.gradiente_titulo {
+    background: linear-gradient(45deg, $color-primario, $color-secondary); /* Gradiente en 45 grados */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Para compatibilidad extra */
+  }
