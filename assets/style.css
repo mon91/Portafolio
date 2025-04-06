@@ -1,7 +1,58 @@
+/* responsive */
+
+/* Estilo por defecto (pantallas grandes) */
+h1, h2 {
+  font-size: 3rem;
+}
+
+
+/* estilo version desktop */
+.imagen_home {
+  width: 600px;
+  height: 333px;
+}
+
+.imagen_about {
+  width: 600px;
+  height: auto;
+  padding-left: 100px;
+}
+
+.bold-text {
+  font-weight: bold;
+  padding-top: 80px;
+}
+
+/* Estilo para celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .imagen_home {
+    width: 300px;
+    height: 170px;
+  }
+
+  .imagen_about {
+    width: 400px;
+    height: auto;
+    padding-left: 0%;
+  }
+
+  .bold-text {
+    font-weight: bold;
+    padding-top: 0px;
+  }
+
+}
+
+
 header {
     list-style: none;
     padding: 0;
 }
+
 
 /* imagen home */
 .contenido_centrado {
@@ -9,6 +60,7 @@ header {
     height: 500px;
     margin-top: 100px;
 }
+
 
 /* titulo y textos secundarios */
 h1 {
@@ -23,37 +75,60 @@ h4 {
     font-weight: bold italic;
   }
 
-  .bold-text {
-    font-weight: bold;
-  }
-
 
 /* seccion about me */  
-.itemmon2 {
-    display: flex;
-    align-content: end;
-    padding-right: 100px;
-  }
-
 body {
     background-color: white;
 
 }
+
+
 
 /* seccion contacto */
 .formfile {
     margin-top: 30px;
 }
 
-/* seccion about me */
-.containermon {
-    display: flex;
+
+
+
+/* gradiente */  
+.gradiente {
+    flex-direction: column;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(45deg pink, purple);
   }
 
-  .itemmon {
-    flex: 1;
-    grid-column: 1/2;
-    padding-top: 100px;
-    padding-left: 50px;
+  /* Titulo sección página blog animado texto */
+  .titulo_blog {
+    animation: mover 2s ease-in-out infinite;
+    position: relative;
   }
 
+  @keyframes mover {
+    0%   { left: 0; }
+    50%  { left: 100px; }
+    100% { left: 0; }
+  }
+
+
+/* contenido centrado de la página de contacto */
+  .centrado {
+    text-align: left;
+    height: 100px;
+}
+
+
+#formulario {
+  padding: 50px;
+
+} 
+
+/* gradiente en el titulo de contacto */
+.gradiente_titulo {
+  background: linear-gradient(45deg, pink, purple); /* Gradiente en 45 grados */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Para compatibilidad extra */
+}
